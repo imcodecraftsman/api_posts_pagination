@@ -75,14 +75,14 @@ $postsData = $postObject->getPostData($value);
     <div class="col-md-12 text-center">
         <ul class="pagination">
             <li class="page-item <?php echo ($value == 1) ? 'disabled' : '' ?>">
-              <a class="page-link" href="test.php?page_no=<?php echo $value-1; ?>">Previous</a>
+              <a class="page-link" href="index.php?page_no=<?php echo $value-1; ?>">Previous</a>
             </li>
             <?php 
                 for ($i=0; $i < $postPageCount; $i++) { ?>
-                    <li class="<?php echo ($value == ($i+1)) ? 'active' : '' ?>"><a href="test.php?page_no=<?php echo $i+1; ?>"><?php echo ($i+1); ?></a></li>
+                    <li class="<?php echo ($value == ($i+1)) ? 'active' : '' ?>"><a href="index.php?page_no=<?php echo $i+1; ?>"><?php echo ($i+1); ?></a></li>
             <?php } ?>
             <li class="page-item <?php echo ($value == $postPageCount) ? 'disabled' : '' ?>">
-              <a class="page-link" href="test.php?page_no=<?php echo $value+1; ?>">Next</a>
+              <a class="page-link" href="index.php?page_no=<?php echo $value+1; ?>">Next</a>
             </li>
         </ul>
     </div>
